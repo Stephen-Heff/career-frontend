@@ -1,38 +1,124 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  
+  height: 100%;
+}
+
+main {
+  background: linear-gradient(-45deg, #06282d, #090805d9, #233136);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 6em;
+  /* background: linear-gradient(-30deg, rgb(35, 49, 54), #363837); */
+  /* background: transparent; */
   text-align: center;
+  background-color: rgb(0, 0, 0,.2);
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-content h2 a {
+  font-size: 2.5em;
+  color: #728a92;
+}
+.menu-flex {
+  display: flex;
+  gap: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-flex li a {
+  font-size: 1.2em;
+  color: #728a92;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-img {
+  background-image: url("/public/img1.jpg");
+  height: 870px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  width: 100%;
+  margin-top: -47em;
 }
 
-.App-link {
-  color: #61dafb;
+.page-title {
+  font-size: 2em;
+  color: #728a92;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+.title-button a {
+  color: rgba(6, 4, 4, 0.523);
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: 0.2em solid #728a92;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-button a:hover {
+  background-color: #728a95;
+  color: #e9dfd5;
+}
+
+.phoneNav {
+  display: none;
+}
+.phoneNav li a {
+  padding: 0.625em 1.25em;
+  text-decoration: none;
+  color: #728a92;
+}
+
+button {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  color: #728a92;
+  border: none;
+  font-size: 20px;
+}
+
+/* *********************************************** */
+.posting-main-contianer {
+  border: 0.15em solid black;
+  margin: 0.5em 0;
+}
+.posting-title-container,
+.posting-description-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em ;
+}
+
+.posting-title-container div {
+  border: 0.15em solid black;
+}
+
+.posting-description-container div {
+  border: 0.15em solid black;
 }
