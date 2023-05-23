@@ -21,7 +21,7 @@ export default function Posting() {
             <div className="posting-main-contianer" key={posting.id}>
               <div className="posting-title-container">
                 <div>
-                  <a href="/job">
+                  <a href="/postings/{postingId}">
                     <h3>{posting.title}</h3>
                   </a>
                 </div>

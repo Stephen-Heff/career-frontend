@@ -22,17 +22,25 @@ export default function Posting() {
   };
 
   return (
-    <section>
+    <section className="posting">
       <h2>Job</h2>
       <div>
         <ul>
           {postings.map((posting) => (
-            <div key={posting.id}>
-              <div>
+            <div className="posting-main-contianer" key={posting.id}>
+              <div className="posting-title-container">
                 <div>
                   <a href="#" onClick={() => handlePostingClick(posting)}>
                     <h3>{posting.title}</h3>
                   </a>
+                </div>
+                <div>
+                  <p>{posting.type.title}</p>
+                </div>
+              </div>
+              <div className="posting-description-container">
+                <div>
+                  <p>{posting.created_at}</p>
                 </div>
               </div>
               {selectedPosting && selectedPosting.id === posting.id && (
