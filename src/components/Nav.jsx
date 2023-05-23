@@ -8,7 +8,7 @@ export default function Nav() {
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink to="/career">Careers</NavLink>
+          <NavLink to="/careers">Careers</NavLink>
         </li>
       </ul>
     </nav>

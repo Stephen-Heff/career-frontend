@@ -20,8 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/career" element={<Career />} />
-          <Route exact path="/posting" element={<Posting />} />
+          <Route path="/careers" element={<Career />} />
+          <Route exact path="/postings" element={<Posting />} />
           <Route path="/postings/:postingId" element={<PostingDetails/>} />
           <Route path="/job" element={<Job />} />
         </Routes>

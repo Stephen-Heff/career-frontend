@@ -1,8 +1,10 @@
 export default function About() {
   return (
-    <section>
-      <h1>About</h1>
-      <p>This site is just for learning React.</p>
+    <section className="content-wrapper">
+      <div class="main-img-3"></div>
+      <div class="main-text">
+        <h1 class="page-title">About us</h1>
+      </div>
     </section>
   );
 }
