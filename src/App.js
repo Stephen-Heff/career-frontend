@@ -9,7 +9,7 @@ import About from "./routes/About";
 import Career from "./routes/Career";
 import Posting from "./routes/Posting";
 import Job from "./routes/Job";
-
+import PostingDetails from "./routes/PostingDetails";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -21,7 +21,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/posting" element={<Posting />} />
+          <Route exact path="/posting" element={<Posting />} />
+          <Route path="/postings/:postingId" element={<PostingDetails/>} />
           <Route path="/job" element={<Job />} />
         </Routes>
         {/* <Main />

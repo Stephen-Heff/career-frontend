@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Posting() {
   const [postings, setPostings] = useState([]);
@@ -21,9 +22,9 @@ export default function Posting() {
             <div className="posting-main-contianer" key={posting.id}>
               <div className="posting-title-container">
                 <div>
-                  <a href="/postings/{postingId}">
+                  <Link to={`/postings/${posting.id}`}>
                     <h3>{posting.title}</h3>
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <p>{posting.type.title}</p>
