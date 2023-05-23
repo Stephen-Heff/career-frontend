@@ -6,7 +6,7 @@ export default function Home() {
       <div class="main-text">
         <h1 class="page-title">We make your dreams a reality</h1>
         <p class="title-button">
-          <a href="/career">Join Now </a>
+          <a href="/careers">Join Now </a>
         </p>
       </div>
 

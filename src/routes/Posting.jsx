@@ -32,7 +32,7 @@ export default function Posting() {
               </div>
               <div className="posting-description-container">
                 <div>
-                  <p>{posting.description}</p>
+                  <p className="truncate">{posting.description}</p>
                 </div>
                 <div>
                   <p>{posting.created_at}</p>

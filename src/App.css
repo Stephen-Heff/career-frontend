@@ -116,14 +116,12 @@ button {
   padding: 0 2em;
 }
 /* *********************************************** */
-.posting {
-  padding: 0 3em;
-}
+
 .posting-main-contianer {
   border: 0.15em solid black;
   margin: 0.5em 0;
-  background-color: #06282dac;
-  color: whitesmoke;
+  /* background-color: #06282dac; */
+  color: rgb(73, 73, 73);
 }
 .posting-title-container,
 .posting-description-container {
@@ -138,6 +136,10 @@ button {
 
 .posting-description-container div {
   border: 0.15em solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
 
 /* *********************************************** */
