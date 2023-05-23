@@ -13,13 +13,11 @@
   scroll-behavior: smooth;
 }
 
-
-
 .header-content {
   display: flex;
   justify-content: space-between;
   padding: 0.8em 6em;
-  background:  rgba(35, 49, 54, 0.083);
+  background: rgba(35, 49, 54, 0.083);
   /* background: transparent; */
   text-align: center;
   background-color: rgba(255, 255, 255, 0.927);
@@ -57,7 +55,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .main-img-3 {
   background-image: url("/public/img3.jpg");
@@ -65,16 +62,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .main-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
   width: 100%;
-  margin-top: -45vh
+  position: absolute;
+  margin-top: -45vh;
+  align-items: center;
 }
 
 .page-title {
@@ -116,13 +112,12 @@ button {
   font-size: 20px;
 }
 
-.content-wrapper{
-padding: 0 2em;
+.content-wrapper {
+  padding: 0 2em;
 }
 /* *********************************************** */
-.posting{
+.posting {
   padding: 0 3em;
-
 }
 .posting-main-contianer {
   border: 0.15em solid black;
@@ -145,15 +140,13 @@ padding: 0 2em;
   border: 0.15em solid black;
 }
 
-
 /* *********************************************** */
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
- /* background-color: red; */
- padding: 4em 3em;
+  /* background-color: red; */
+  padding: 4em 3em;
 }
-
 
 .f-icon a {
   font-size: 1em;
