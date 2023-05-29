@@ -15,7 +15,7 @@ export default function Posting() {
 
   return (
     <section className="postings content-wrapper" id="postings">
-      <h2>My Postings</h2>
+      <h2>Job Postings</h2>
       <div>
         <ul>
           {postings.map((posting) => (
