@@ -11,7 +11,7 @@ function App() {
     <header id="header">
       <div class="header-content">
         <h2 id="site-name">
-          <a href="/">MyComPany </a>
+          <a href="/">WeBuild </a>
         </h2>
         <Nav />
       </div>
