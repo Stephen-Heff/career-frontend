@@ -15,7 +15,7 @@ function App() {
         </h2>
         <Nav />
       </div>
-      <button onClick={toggleMenu}>
+      <button className="menu-toggle" onClick={toggleMenu}>
         <i class="fa-solid fa-bars" id="menu-toggle"></i>
       </button>
 

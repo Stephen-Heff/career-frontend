@@ -8,7 +8,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Career from "./routes/Career";
 import Posting from "./routes/Posting";
-import Job from "./routes/Job";
+import Apply from "./routes/Apply";
 import PostingDetails from "./routes/PostingDetails";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -22,8 +22,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/careers" element={<Career />} />
           <Route exact path="/postings" element={<Posting />} />
-          <Route path="/postings/:postingId" element={<PostingDetails/>} />
-          <Route path="/job" element={<Job />} />
+          <Route path="/postings/:postingId" element={<PostingDetails />} />
+          <Route path="/apply" element={<Apply />} />
         </Routes>
         {/* <Main />
           <Project />

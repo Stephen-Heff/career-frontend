@@ -10,11 +10,12 @@ export default function Posting() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [postingsResponse, departmentsResponse, typesResponse] = await Promise.all([
-          fetch("http://localhost/api/postings"),
-          fetch("http://localhost/api/departments"),
-          fetch("http://localhost/api/types"),
-        ]);
+        const [postingsResponse, departmentsResponse, typesResponse] =
+          await Promise.all([
+            fetch("http://localhost/api/postings"),
+            fetch("http://localhost/api/departments"),
+            fetch("http://localhost/api/types"),
+          ]);
 
         const postingsData = await postingsResponse.json();
         const departmentsData = await departmentsResponse.json();
