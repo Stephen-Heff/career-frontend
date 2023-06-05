@@ -29,7 +29,7 @@ export default function PostingDetails() {
   };
 
   const handleApplyClick = () => {
-    setShowApplyText((prevShowApplyText) => !prevShowApplyText);
+    setShowApplyText(true);
   };
 
   return (
@@ -63,7 +63,9 @@ export default function PostingDetails() {
           <p>{posting.email}</p>
         </div>
         <div>
-          <button onClick={handleApplyClick}>Apply</button>
+          <button className="apply-btn" onClick={handleApplyClick}>
+            Apply
+          </button>
         </div>
         {showApplyText && (
           <section className="apply-section content-wrapper" id="apply">
@@ -72,15 +74,6 @@ export default function PostingDetails() {
             <div className="apply-flexbox">
               <form method="get">
                 <div className="apply-container">
-                  <div>
-                    <label htmlFor="postingID">Posting ID:</label>
-                    <input
-                      type="text"
-                      id="postingID"
-                      name="postingID"
-                      placeholder=""
-                    />
-                  </div>
                   <div>
                     <label htmlFor="name">Your Name:</label>
                     <input type="text" id="name" name="name" placeholder="" />
@@ -94,17 +87,17 @@ export default function PostingDetails() {
                     <input type="number" id="phone" name="phone" />
                   </div>
                   <div>
-                    <h2>Upload your resume</h2>
+                    <h6>Upload your resume</h6>
                     <input
                       className="file-input"
                       type="file"
                       onChange={handleFileChange}
                     />
                   </div>
+                  <button className="apply-btn" type="submit">
+                    Submit
+                  </button>
                 </div>
-                <button className="apply-btn" type="submit">
-                  Apply Now
-                </button>
               </form>
             </div>
           </section>
