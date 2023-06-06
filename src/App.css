@@ -233,6 +233,12 @@
   letter-spacing: 0.1em;
 }
 
+.truncate{
+  width: 81.25em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* *****************TEAM******************* */
 
 .team-container {

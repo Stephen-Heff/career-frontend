@@ -40,6 +40,12 @@ export default function Posting() {
     });
   };
 
+  // Function to format the deadline to DD/MM/YYYY
+  const formatDeadline = (deadline) => {
+    const date = new Date(deadline);
+    return date.toLocaleDateString("en-GB");
+  };
+
   return (
     <section>
       <div class="main-img-7"></div>
@@ -114,8 +120,7 @@ export default function Posting() {
                       <p className="truncate">{posting.description}</p>
                     </div>
                     <div>
-                      <p>{posting.created_at}</p>
-                    </div>
+                    <p>Closing Date: {formatDeadline(posting.deadline)}</p>                    </div>
                   </div>
                 </div>
               ))}
