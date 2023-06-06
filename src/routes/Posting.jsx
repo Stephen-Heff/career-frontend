@@ -12,9 +12,9 @@ export default function Posting() {
       try {
         const [postingsResponse, departmentsResponse, typesResponse] =
           await Promise.all([
-            fetch("http://localhost/api/postings"),
-            fetch("http://localhost/api/departments"),
-            fetch("http://localhost/api/types"),
+            fetch("http://careersite.stephenf.ca/api/postings"),
+            fetch("http://careersite.stephenf.ca/api/departments"),
+            fetch("http://careersite.stephenf.ca/api/types"),
           ]);
 
         const postingsData = await postingsResponse.json();

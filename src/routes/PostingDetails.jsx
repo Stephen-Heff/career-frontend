@@ -9,7 +9,7 @@ export default function PostingDetails() {
 
   useEffect(() => {
     const getPosting = async () => {
-      let response = await fetch(`http://localhost/api/postings/${postingId}`);
+      let response = await fetch(`http://careersite.stephenf.ca/api/postings/${postingId}`);
       let data = await response.json();
       console.log(data);
       setPosting(data);
