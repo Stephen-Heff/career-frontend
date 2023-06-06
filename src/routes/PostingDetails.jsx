@@ -32,6 +32,11 @@ export default function PostingDetails() {
     setShowApplyText(true);
   };
 
+    // Function to format the deadline to DD/MM/YYYY
+    const formatDeadline = (deadline) => {
+      const date = new Date(deadline);
+      return date.toLocaleDateString("en-GB");
+    };
   return (
     <section className="PostingDetails content-wrapper">
       <h3>{posting.title}</h3>
@@ -39,27 +44,27 @@ export default function PostingDetails() {
       {/* Display other details of the posting */}
       <div>
         <div>
-          <h5>Job Description:</h5>
+          <h6>Job Description:</h6>
           <p>{posting.description}</p>
         </div>
         <div>
-          <h5>Deadline:</h5>
-          <p>{posting.deadline}</p>
+          <h6>Closing date:</h6>
+          <p>{formatDeadline(posting.deadline)}</p>                  
         </div>
         <div>
-          <h5>Posted On:</h5>
-          <p>{posting.created_at}</p>
+          <h6>Posted date:</h6>
+          <p>{formatDeadline(posting.created_at)}</p>
         </div>
         <div>
-          <h5>Job Type:</h5>
+          <h6>Job Type:</h6>
           <p>{posting.type && posting.type.title}</p>
         </div>
         <div>
-          <h5>Department:</h5>
+          <h6>Department:</h6>
           <p>{posting.department && posting.department.title}</p>
         </div>
         <div>
-          <h5>Email:</h5>
+          <h6>Email:</h6>
           <p>{posting.email}</p>
         </div>
         <div>
