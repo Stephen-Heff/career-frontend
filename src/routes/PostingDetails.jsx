@@ -63,15 +63,17 @@ export default function PostingDetails() {
           <h6>Department:</h6>
           <p>{posting.department && posting.department.title}</p>
         </div>
-        <div>
-          <h6>Email:</h6>
-          <p>{posting.email}</p>
+            <div>
+          <h6>Send your resume to:</h6>
+          <a href="{posting.email}" target="_blank">
+          {posting.email}
+        </a>
         </div>
-        <div>
-          <button className="apply-btn" onClick={handleApplyClick}>
-            Apply
-          </button>
-        </div>
+//         <div>
+//           <button className="apply-btn" onClick={handleApplyClick}>
+//             Apply
+//           </button>
+//         </div>
         {showApplyText && (
           <section className="apply-section content-wrapper" id="apply">
             <h2>Job Application</h2>
