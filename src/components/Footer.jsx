@@ -24,6 +24,9 @@ export default function Footer() {
         <p>
           <a href="/careers">Careers</a>
         </p>
+        <p>
+          <a href="http://careersite.stephenf.ca/console/login">Admin Login</a>
+        </p>
       </div>
     </footer>
   );
