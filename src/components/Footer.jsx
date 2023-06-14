@@ -15,7 +15,7 @@ export default function Footer() {
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
-      <p> &copy; 2023 | MyComPany</p>
+      <p> &copy; 2023 | WeBuild</p>
       <div className="links">
         <p> Quick Links</p>
         <p>
