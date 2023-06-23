@@ -65,7 +65,7 @@ export default function PostingDetails() {
         </div>
             <div>
           <h6>Send your resume to:</h6>
-          <a href=`mailto:${posting.email}` target="_blank">
+          <a href={`mailto:${posting.email}`} target="_blank">
           {posting.email}
         </a>
         </div>
